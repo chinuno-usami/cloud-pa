@@ -1,0 +1,10 @@
+[package]
+name = "cloud-pa"
+version = "0.1.0"
+authors = ["Chinuno Usami <usami@chinuno.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "*"
+threadpool = "*"
+clap = "*"
