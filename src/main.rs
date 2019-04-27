@@ -24,7 +24,7 @@ fn main() -> Result<(), Box<std::error::Error>> {
              .index(1))
         .arg(Arg::with_name("NAME")
              .help("要啪谁?")
-             .possible_values(&["sn", "diy", "wan", "dog", "all"])
+             .possible_values(&["xl", "diy", "wan", "dog", "all"])
              .required(true)
              .index(2))
         .get_matches();
@@ -37,8 +37,8 @@ fn main() -> Result<(), Box<std::error::Error>> {
     let target = matches.value_of("NAME").unwrap();
 
     let tgt;
-    if target == "sn" {
-        println!("啪酸奶");
+    if target == "xl" {
+        println!("啪咸狼");
         tgt = "3";
     } else if target == "diy" {
         println!("啪diy");
