@@ -76,8 +76,7 @@ fn main() -> Result<(), Box<std::error::Error>> {
         });
     }
 
+    pool.join();
+    Ok(())
 
-    loop{
-        thread::sleep(Duration::from_secs(4000));
-    }
 }
